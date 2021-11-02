@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Aplikasi Menggambar Sederhana</title>
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=yes">
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/south-street/jquery-ui.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="header">Aplikasi Menggambar Sederhana</div>
+
+        <div id="canvasContainer">
+            <canvas id="paint" width="700px" height="500px"></canvas>
+        </div>
+
+        <div class="inputContainer" >
+            <div class="input" id="colorInput">
+                <input type="color" list id="paintColor">      
+            </div>
+            <div class="input" id="thickenessInput">
+                <div id="circle"></div>
+            </div>
+            <div class="input">
+                <div id="slider"></div>
+            </div>         
+        </div>
+         
+        <div class="btnContainer">
+            <div class="btnInput">
+                <span id="erase" class="button">Hapus</span>
+            </div>
+            <div class="btnInput">
+                <span id="save" class="button">Simpan</span>
+            </div>        
+            <div class="btnInput">
+                <span id="reset" class="button">Ulangi</span>
+            </div>       
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script src="script.js">
+        </script>
+    </body>
+</html>
